@@ -1,0 +1,43 @@
+/*
+You will style your page using at least 5 CSS selectors for general CSS styling. You will place the CSS in its own file. 
+*/
+
+body{
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px;
+    padding: 10px;
+    background-color: #b56060;
+}
+.text_to_analyze{
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#submitbtn{
+    display: inline-block;
+    background-color: bisque;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+#submitbtn:hover{
+    background-color: #9e6bb1;
+    transform: scale(1.2);
+}
+#text_output{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: aquamarine;
+}

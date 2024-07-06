@@ -1,0 +1,25 @@
+{{!
+This page will respond with a valid HTML document with the results returned from the API.
+The title of the document should be "Movies Found". You should have the title set as the <title> element of
+    the HTML document and as an h1 in your document. In an h2 element, you will print the supplied
+    searchMoviesByName.
+
+    You must also provide an a tag that links back to your / route with the text Make another search.
+
+    Your page should reference a CSS file, /public/css/styles.css; this file should have at least 10 rulesets you must
+    use at
+    least 5 of them on this page.
+
+    }}
+<a href="/" class="no-underline">Search for Another Movie</a>
+<h1>Movies Found</h1>
+<h2>{{title_searched}}</h2>
+    <ol>
+        {{#each movies}}
+            <li> <a href="/movie/{{imdbID}}" class="no-underline">{{Title}} 
+                <img class="searchResultImage" alt="{{Title}} Poster" src="{{Poster}}" width="75" height="117"></a>
+            </li>
+        {{/each}}
+    </ol>
+    <br><br>
+

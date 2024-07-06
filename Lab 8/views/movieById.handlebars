@@ -1,0 +1,63 @@
+{{!
+This page will be rendered when the following route is hit: GET http://localhost:3000/movie/:id
+The title of the document should be the name of the Movie. You should have the title set as the <title> element of
+    the HTML document.
+
+    Your page should reference a CSS file, /public/css/styles.css; his file should have at least 10 rulesets you must
+    use at
+    least 5 of them on this page.
+
+
+    }}
+
+
+<a href="/" class="no-underline">Search for Another Movie</a>
+<article>
+        
+  <h1 id="individual_movie1">{{movie.Title}}</h1>
+  <img alt="{{movie.Title}}" src="{{movie.Poster}}" id="individual_movie2">
+
+  <h2>Plot</h2>
+  <p>{{movie.Plot}}</p>
+  <section>
+    <h3>Info</h3>
+    <dl class="information">
+      <dt>Year Released:</dt>
+        <dd>{{movie.Year}}</dd>
+      <dt>Rated:</dt>
+        <dd>{{movie.Rated}}</dd>
+      <dt>Runtime:</dt>
+        <dd>{{movie.Runtime}}</dd>
+      <dt>Genre(s):</dt>
+        <dd>{{movie.Genre}}</dd>
+      <dt>Box Office Earnings:</dt>
+        <dd>{{movie.BoxOffice}}</dd>
+      <dt>DVD Release Date:</dt>
+        <dd>{{movie.DVD}}</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h4>Cast and Crew</h4>
+    <p><strong>Director: </strong> {{movie.Director}} </p>
+    <p><strong>Writer: </strong>{{movie.Writer}} </p>
+    <p><strong>Cast: </strong>{{movie.Actors}} </p>
+  </section>
+  
+  <section>
+    <h4>Ratings</h4>
+    <table class="my_coolratings_table">
+    <tr>
+        <th>Source</th>
+        <th>Rating</th>
+     </tr>
+      {{#each movie.Ratings}}  
+      
+     <tr>
+       <td> {{this.Source}} </td>
+       <td>{{this.Value}} </td>
+    </tr>
+    {{/each}}
+  </table>
+  </section>
+</article><br>

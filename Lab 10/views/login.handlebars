@@ -1,0 +1,21 @@
+{{!--
+
+login form handlebar template
+
+--}}
+
+<form action="/login" method="POST" id="signin-form" name="signin-form">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" ><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" ><br><br>
+        <a href="/register">Click here to register!</a>  <br><br>
+        <div id="error_login">
+
+        </div>
+        <input type="submit" value="Login" name = "submitButton">
+    </form>
+
+            <script src="/public/js/client_side_validation.js"></script>

@@ -1,0 +1,12 @@
+{
+  "name": "cs-546-lab-2",
+  "version": "1.0.0",
+  "description": "Lab 2 Code Solution",
+  "main": "app.js",
+  "type":"module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Yash Deshpande 20025089",
+  "license": "ISC"
+}

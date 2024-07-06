@@ -1,0 +1,76 @@
+/*This file should have 10 CSS rulesets */
+.a{
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a.no-underline {
+    text-decoration: none; 
+}
+body {
+    background: #cddc6b;
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  }
+
+section{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+article h2{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+article p{
+    margin-left: 15px;
+}
+.my_coolratings_table{
+    border: 1px solid #010000;
+    border-collapse: collapse;
+}
+.my_coolratings_table th{
+    border: 1px solid #010000;
+    border-collapse: collapse;
+}
+.my_coolratings_table td{
+    border: 1px solid #010000;
+    border-collapse: collapse;
+}
+/* .information{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+form{
+    border-radius: 3px;
+    padding-left: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #b0762c;
+}
+
+#searchMoviesByName {
+    font-size: 15px;
+}
+.searchResultImage{
+    display: block;
+    margin-bottom: 15px;
+    
+    
+}
+ol li{
+    margin-bottom: 5px;
+}
+h1{
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+}
+#individual_movie1{
+    padding-left: 20px;
+}
+#individual_movie2{
+    padding-left: 20px;
+}
